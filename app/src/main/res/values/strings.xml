@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IntentoDos</string>
+    <string name="imgBtnUno">Vales</string>
+    <string name="imgBtnDos">Clientes</string>
+    <string name="imgBtnTres">Configuraciones</string>
+    <string name="imgBtnCuatro">Distribuidores</string>
+    <string name="imgBtnCinco">Reportes</string>
+    <string name="imgBtnSeis">Consultas</string>
+</resources>
