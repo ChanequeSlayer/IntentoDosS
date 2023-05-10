@@ -8,29 +8,20 @@ import android.support.annotation.Nullable;
 public class AdminSQLiteOpenHelpder extends SQLiteOpenHelper {
 
 
-    public AdminSQLiteOpenHelpder(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public AdminSQLiteOpenHelpder(@Nullable Context context) {
+        super(context, "vales", null, 1);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase ValesDB) {
+    public void onCreate(SQLiteDatabase vales) {
 
-        ValesDB.execSQL("create table clientes(idCliente text not null unique primary key,nombre text not null,apellidoP text not null ,apellidoM text not null," +
-                "direccion text not null, telefono text not null,nacimiento date not null)");
-
-
-        //id del cliente
-        //nombre(s) cliente
-        //apellidoP
-        //apellidoM
-        //Direccion
-        //telefono
-        //nacimiento
+        vales.execSQL("create table clientes(idCliente int primary key UNIQUE ,nombre text,apellidoP text,apellidoM text,telefono int, direccion text )");
 
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+    public void onUpgrade(SQLiteDatabase vales, int oldVersion, int newVersion) {
+        vales.execSQL("DROP TABLE IF EXISTS clientes");
+        onCreate(vales);
     }
 }

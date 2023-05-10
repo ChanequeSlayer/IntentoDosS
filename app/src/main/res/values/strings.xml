@@ -1,9 +1,21 @@
 <resources>
-    <string name="app_name">IntentoDos</string>
+    <string name="app_name">ValesPLUS</string>
     <string name="imgBtnUno">Vales</string>
     <string name="imgBtnDos">Clientes</string>
     <string name="imgBtnTres">Configuraciones</string>
     <string name="imgBtnCuatro">Distribuidores</string>
     <string name="imgBtnCinco">Reportes</string>
     <string name="imgBtnSeis">Consultas</string>
+
+    <string name="txtID">ID del cliente</string>
+    <string name="txtNombre">Nombre:</string>
+    <string name="txtApellidoM">ApellidoP:</string>
+    <string name="txtApellidoP">ApellidoM:</string>
+    <string name="txtTelefono">Telefono:</string>
+    <string name="txtDireccion">Direccion:</string>
+    <string name="txtNumberD">Numero de Direccion</string>
+    <string name="imgBtnAdd">Agregar</string>
+    <string name="imgBtnDel">Borrar</string>
+    <string name="imgBtnSear">Buscar</string>
+    <string name="imgBtnConf">Modificar</string>
 </resources>
